@@ -1,5 +1,5 @@
 """
-    Module docstring for pylint...
+    Module docstring for pylint not to complain...
 """
 
 from flask import Flask, request, render_template
@@ -10,14 +10,14 @@ app = Flask("Emotion Detection")
 @app.route("/")
 def render_index_page():
     """
-        Function docstring for pylint...
+        Module docstring for pylint not to complain...
     """
     return render_template("index.html")
 
 @app.route("/emotionDetector", methods=["GET"])
 def emo_detector():
     """
-        Function docstring for pylint...
+        Module docstring for pylint not to complain...
     """
 
     text_to_analyze = request.args.get("textToAnalyze")
