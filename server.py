@@ -37,6 +37,9 @@ def emo_detector():
 
     result = result_part1 + result_part2 + result_part3
 
+    if dominant_emotion is None:
+        result = "Invalid text! Please try again!"
+
     return result
 
 if __name__ == "__main__":
